@@ -2,8 +2,10 @@ import random
 
 from domain.services import WarehouseService
 from infrastructure.database import SessionFactory as SyncSession
-from infrastructure.repositories import (SqlAlchemyOrderRepository,
-                                         SqlAlchemyProductRepository)
+from infrastructure.repositories import (
+    SqlAlchemyOrderRepository,
+    SqlAlchemyProductRepository,
+)
 from infrastructure.unit_of_work import SqlAlchemyUnitOfWork
 
 
