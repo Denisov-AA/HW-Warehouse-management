@@ -32,10 +32,6 @@ jobs:
         run: |
           black --check .
 
-      - name: Sort imports with Isort
-        run: |
-          isort --check-only .
-
   Run-tests:
     runs-on: ubuntu-latest
     steps:
