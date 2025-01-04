@@ -25,7 +25,7 @@ line-length = 120
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["src"]
+pythonpath = [".", "./src/domain", "./src/infrastructure"]
 
 [build-system]
 requires = ["poetry-core"]

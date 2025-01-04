@@ -8,5 +8,5 @@ python src/main.py
 ```
 Run tests:
 ```commandline
-cd src/ && python -m unittest tests.py
+pytest /tests
 ```
