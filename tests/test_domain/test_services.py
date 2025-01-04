@@ -3,11 +3,10 @@ from sqlalchemy import delete
 
 from src.domain.services import WarehouseService
 from src.infrastructure.database import SessionFactory as SyncSession
-from src.infrastructure.orm import OrderORM, ProductORM, order_product_associations
-from src.infrastructure.repositories import (
-    SqlAlchemyOrderRepository,
-    SqlAlchemyProductRepository,
-)
+from src.infrastructure.orm import (OrderORM, ProductORM,
+                                    order_product_associations)
+from src.infrastructure.repositories import (SqlAlchemyOrderRepository,
+                                             SqlAlchemyProductRepository)
 
 
 class TestDataCreation:

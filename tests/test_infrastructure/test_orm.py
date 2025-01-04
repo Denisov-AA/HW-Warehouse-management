@@ -2,11 +2,10 @@ import pytest
 from sqlalchemy import delete
 
 from src.infrastructure.database import SessionFactory as SyncSession
-from src.infrastructure.orm import OrderORM, ProductORM, order_product_associations
-from src.infrastructure.repositories import (
-    SqlAlchemyOrderRepository,
-    SqlAlchemyProductRepository,
-)
+from src.infrastructure.orm import (OrderORM, ProductORM,
+                                    order_product_associations)
+from src.infrastructure.repositories import (SqlAlchemyOrderRepository,
+                                             SqlAlchemyProductRepository)
 
 session = SyncSession()
 order_repo = SqlAlchemyOrderRepository(session)
